@@ -13,7 +13,7 @@
 
 <h1>Itt látható a kollázs képem...</h1>
 
-<img src="" alt="Kollazs" width="500" height="500">
+<img src="https://raw.githubusercontent.com/CsillikGergely/kollazs2/main/BeFunky-collage.jpg" alt="Kollazs" width="500" height="500">
 
 </body>
 </html>
