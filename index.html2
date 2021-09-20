@@ -2,9 +2,9 @@
 <html>
 <body>
 
-<h1>The img element</h1>
+<h1>Az en kollazs kepem</h1>
 
-<img src="img_girl.jpg" alt="A kollazs kepem" width="500" height="600">
+<img src="BeFunky-collage.jpg" alt="A kollazs kepem" width="500" height="600">
 
 </body>
 </html>
