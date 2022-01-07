@@ -1,22 +1,73 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <title>CSG oldala</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body style="background-color: rgb(170, 74, 74); text-align: center;">
-
-  <nav>
-    <button> <a href="index.html" target="blank" style="background-color: green;"> |HOME| </a></button>
-    <button> <a href="feladat1.html" target="blank">-|KÉPLINK| </a> </button>
-    <button> <a href="listak.html" target="blank">-|LISTÁK| </a> </button>
-    <button> <a href="orarend.html" target="blank">|ÓRAREND| </a> </button>
-  </nav>
-
-  <h1 style="color:red;">Csillik Gergely</h1>
+<style>
+  body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: grey;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: red;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="sidebar">
+    <a class="active" href="https://csillikgergely.github.io/kollazs2/">RÓLAM</a>
+    <a href="https://csillikgergely.github.io/kollazs2/feladat1.html">Képlink</a>
+    <a href="https://csillikgergely.github.io/kollazs2/listak.html">Listak</a>
+    <a href="https://csillikgergely.github.io/kollazs2/orarend.html">Órarend</a>
+  </div>
+  
+  <div class="content">
+    <body>
+    <h1 style="color:red;">Csillik Gergely</h1>
   <h2 style="color:blue;">Csillik Gergely</h2>
   <h3 style="color:green;">Csillik Gergely</h3>
   <h4 style="color:yellow;">Csillik Gergely</h4>
@@ -28,4 +79,8 @@
     title="Kollázs" width=600>
 </body>
 
-</html>
+  </div>
+  
+  </body>
+  </html>
+  
