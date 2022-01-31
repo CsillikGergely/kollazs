@@ -42,6 +42,54 @@
       .sidebar {
         width: 100%;
         height: auto;
+    
+
+<body style="background-color: brown; text-align: center;">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      background-color: grey;
+    }
+    
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: red;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+     
+    .sidebar a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
         position: relative;
       }
       .sidebar a {float: left;}
@@ -57,30 +105,26 @@
     </style>
     </head>
     <body>
-       
     <div class="sidebar">
-      <a class="active" href="https://csillikgergely.github.io/kollazs2/feladat1.html">Képlink</a>
-      <a href="https://csillikgergely.github.io/kollazs2/">Rólam</a>
-      <a href="https://csillikgergely.github.io/kollazs2/listak_new.html">Listak</a>
+      <a class="active" href="https://csillikgergely.github.io/kollazs2/listak_new.html">Képlink</a>
+      <a href="https://csillikgergely.github.io/kollazs2/">Index</a>
+      <a href="https://csillikgergely.github.io/kollazs2/listak_new.html">Listák</a>
       <a href="https://csillikgergely.github.io/kollazs2/orarend_new.html">Órarend</a>
     </div>
     
     <div class="content">
-        <h1 style="color:green;">Csillik Gergely</h1>
-        <p style="color:darkorange">Kép + Link feladat</p>
-      
-        <a href="https://www.leagueoflegends.com/hu-hu/champions/kayn/"> KÉP <br>
-          <img
-            src=https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-kayn-reveal/hu_HU/94dcc05587bfb7cf3b581917f3dd6662df5eb212/assets/img/share/kayn_1200x630.jpg
-            alt="Kayn" title="Kayn, az árnykaszás" width=500>
-      
-        </a>
-      
-      
-      </body>
+  
+  <h1 style="color:green;">Csillik Gergely</h1>
+  <p style="color:darkorange">Kép + Link feladat</p>
 
-    </div>
-    
-    </body>
-    </html>
-    
+  <a href="https://www.leagueoflegends.com/hu-hu/champions/kayn/"> KÉP <br>
+    <img
+      src=https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-kayn-reveal/hu_HU/94dcc05587bfb7cf3b581917f3dd6662df5eb212/assets/img/share/kayn_1200x630.jpg
+      alt="Kayn" title="Kayn, az árnykaszás" width=500>
+
+  </a>
+
+
+</body>
+
+</html>
