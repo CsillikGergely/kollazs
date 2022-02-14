@@ -21,11 +21,13 @@ body {
   color: black;
   padding: 16px;
   text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
 }
  
 .sidebar a.active {
   background-color: #04AA6D;
   color: white;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .sidebar a:hover:not(.active) {
