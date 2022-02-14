@@ -1,7 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height:15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 5px;
+  height: 5px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+
 body {
   margin: 0;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Lato", sans-serif;
   background-color: grey;
 }
 
@@ -13,7 +48,6 @@ body {
   position: fixed;
   height: 100%;
   overflow: auto;
-  font-family: 'Bebas Neue', cursive;
 }
 
 .sidebar a {
@@ -21,13 +55,11 @@ body {
   color: black;
   padding: 16px;
   text-decoration: none;
-  font-family: 'Bebas Neue', cursive;
 }
  
 .sidebar a.active {
-  background-color: #04AA6D;
+  background-color: #6a4b70;
   color: white;
-  font-family: 'Bebas Neue', cursive;
 }
 
 .sidebar a:hover:not(.active) {
@@ -56,4 +88,6 @@ div.content {
     text-align: center;
     float: none;
   }
+ 
+  
 }
