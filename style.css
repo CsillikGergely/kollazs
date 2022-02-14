@@ -34,9 +34,10 @@
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Bebas Neue', cursive;
   background-color: grey;
 }
 
@@ -48,6 +49,7 @@ body {
   position: fixed;
   height: 100%;
   overflow: auto;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .sidebar a {
@@ -55,11 +57,13 @@ body {
   color: black;
   padding: 16px;
   text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
 }
  
 .sidebar a.active {
-  background-color: #6a4b70;
+  background-color: #04AA6D;
   color: white;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .sidebar a:hover:not(.active) {
@@ -88,6 +92,4 @@ div.content {
     text-align: center;
     float: none;
   }
- 
-  
 }
