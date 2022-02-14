@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Bebas Neue', cursive;
   background-color: grey;
 }
 
@@ -12,6 +13,7 @@ body {
   position: fixed;
   height: 100%;
   overflow: auto;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .sidebar a {
