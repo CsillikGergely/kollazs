@@ -1,3 +1,41 @@
+.img {
+  border: 5px solid rgb(243, 0, 0);
+}
+
+.dropbtn {
+  background-color: #eeff00;
+  color: rgb(216, 8, 8);
+  padding: 16px;
+  font-size: 16px;
+  border: 50px;
+}
+
+.dropdown {
+  position: left;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #ff0000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 208, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(227, 243, 2);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #c8ff00;}
+
 .container {
   display: flex;
   justify-content: center;
@@ -62,6 +100,7 @@ body {
   height: 100%;
   overflow: auto;
   font-family: 'Bebas Neue', cursive;
+  text-align: left;
 }
 
 .sidebar a {
