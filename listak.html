@@ -28,36 +28,61 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: rgb(110, 173, 165);">
-
-  <div class="sidebar">
-    <a href="https://csillikgergely.github.io/kollazs2/">Rólam</a>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="active" href="https://csillikgergely.github.io/kollazs2/">Rólam</a>
     <a href="https://csillikgergely.github.io/kollazs2/keplink.html">KÉPLINK</a>
-    <a class="active" href="https://csillikgergely.github.io/kollazs2/listak.html">LISTÁK</a>
+    <a href="https://csillikgergely.github.io/kollazs2/listak.html">LISTÁK</a>
     <a href="https://csillikgergely.github.io/kollazs2/orarend.html">ÓRAREND</a>
     <a href="https://csillikgergely.github.io/kollazs2/evszakok.html">ÉVSZAKOK</a>
     <a href="https://csillikgergely.github.io/kollazs2/urlapok.html">Űrlap</a>
+    <a href="https://csillikgergely.github.io/kollazs2/JavaScript.html">JavaScript</a>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
   </div>
 
-  <div class="content">
-    <h1 style="color: blue;">Csillik Gergely</h1>
-    <h2 style="color: brown;">Listák</h2>
-    <p style="color: brown; background-color: cornflowerblue; width: 30%;">Kedvenc tantárgyaim</p>
-    <ol>
-      <li>IKT Projektmunka</li>
-      <li>Tesi</li>
-      <li>Irodalom</li>
-    </ol>
-    <p style="color: purple; background-color:red; width: 30%;">Kedvenc szabadidős tevékenységeim:</p>
-    <ul>
-      <li>Parkourozás</li>
-      <li>Edzés</li>
-      <li>Videojátékokkal játszani</li>
-    </ul>
+
+
+    <div class="content">
+      <span style="font-size:30px;cursor:pointer; color: rgb(58, 58, 58);" onclick="openNav()">&#9776; Menü</span>
+      
+      <h1 style="color: rgb(43, 43, 214); text-align: center;">Csillik Gergely</h1>
+      <h2 style="color: brown; text-align: center;">Listák</h2>
+      <p style="color:grey; background-color:rgb(54, 35, 35); width: 30%; margin-right: auto; margin-left: auto; text-align: center;">Kedvenc tantárgyaim</p>
+
+      <ol class="center-list">
+        <li>IKT Projektmunka</li>
+        <li>Tesi</li>
+        <li>Irodalom</li>
+      </ol>
+      <p style="color:grey; background-color:rgb(54, 35, 35); width: 30%; margin-right: auto; margin-left: auto; text-align: center;">Kedvenc szabadidős tevékenységeim:</p>
+      <ul class="center-list">
+        <li>Parkourozás</li>
+        <li>Edzés</li>
+        <li>Videojátékokkal játszani</li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p>Csillik Gergely weboldala</p>
+    </div>
   </div>
-  <div class="footer">
-    <p>Csillik Gergely weboldala</p>
-  </div>
+  <script> 
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 </body>
 
 </html>

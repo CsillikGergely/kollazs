@@ -29,22 +29,37 @@
 </head>
 
 <body>
-
-    <div class="sidebar">
-        <a href="https://csillikgergely.github.io/kollazs2/">Rólam</a>
-        <a href="https://csillikgergely.github.io/kollazs2/keplink.html">KÉPLINK</a>
-        <a href="https://csillikgergely.github.io/kollazs2/listak.html">LISTÁK</a>
-        <a class="active" href="https://csillikgergely.github.io/kollazs2/orarend.html">ÓRAREND</a>
-        <a href="https://csillikgergely.github.io/kollazs2/evszakok.html">ÉVSZAKOK</a>
-        <a href="https://csillikgergely.github.io/kollazs2/urlapok.html">Űrlap</a>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="active" href="https://csillikgergely.github.io/kollazs2/">Rólam</a>
+      <a href="https://csillikgergely.github.io/kollazs2/keplink.html">KÉPLINK</a>
+      <a href="https://csillikgergely.github.io/kollazs2/listak.html">LISTÁK</a>
+      <a href="https://csillikgergely.github.io/kollazs2/orarend.html">ÓRAREND</a>
+      <a href="https://csillikgergely.github.io/kollazs2/evszakok.html">ÉVSZAKOK</a>
+      <a href="https://csillikgergely.github.io/kollazs2/urlapok.html">Űrlap</a>
+      <a href="https://csillikgergely.github.io/kollazs2/JavaScript.html">JavaScript</a>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
     </div>
-
-    <div class="content">
+  
+    <div class="center">
+      
+      <div class="content">
+        <span style="font-size:30px;cursor:pointer; color: rgb(58, 58, 58);" onclick="openNav()">&#9776; Menü</span>
         <table class="center" border="2px"
             style="text-align: center; color:rgb(207, 0, 0); background-image:url(https://pbs.twimg.com/profile_images/1108358340722081793/DxI9e6SO_400x400.jpg);">
             <br>
             <br>
             <br>
+            
+
             <h1 style="text-align: center;"> Az órarendem</h1>
             <tr>
                 <th>Órarend</th>
@@ -132,6 +147,7 @@
     <div class="footer">
         <p>Csillik Gergely weboldala</p>
       </div>
-</body>
+
+    </body>
 
 </html>

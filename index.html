@@ -28,8 +28,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: rgb(110, 173, 165);">
-  <div class="sidebar">
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a class="active" href="https://csillikgergely.github.io/kollazs2/">Rólam</a>
     <a href="https://csillikgergely.github.io/kollazs2/keplink.html">KÉPLINK</a>
     <a href="https://csillikgergely.github.io/kollazs2/listak.html">LISTÁK</a>
@@ -37,21 +38,48 @@
     <a href="https://csillikgergely.github.io/kollazs2/evszakok.html">ÉVSZAKOK</a>
     <a href="https://csillikgergely.github.io/kollazs2/urlapok.html">Űrlap</a>
     <a href="https://csillikgergely.github.io/kollazs2/JavaScript.html">JavaScript</a>
-
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
   </div>
 
-  <div class="center">
+  
+    
     <div class="content">
+      <span style="font-size:30px;cursor:pointer; color: rgb(58, 58, 58);" onclick="openNav()">&#9776; Menü</span>
+      
+      
+    <center>
       <h1 style="color:red;" class="center">Csillik Gergely</h1>
       <h2 style="color:blue;">Csillik Gergely vagyok, a Kandó Kálmán Informatikai Technikumba járok.Szeretek eddzeni és
         programozni.</h2>
-      <h3 style="color: rgb(7, 148, 43);" class="center">Itt a kollázs képem:</h3>
+      <h3 style="color: rgb(58, 58, 58);" class="center">Itt a kollázs képem:</h3>
       <img src="https://github.com/CsillikGergely/kollazs2/blob/main/BeFunky-collage%20(2).png?raw=true" alt="Kollázskép"
         title="Kollázs" width=600>
-    </div>
-    <div class="footer">
-      <p>Csillik Gergely weboldala</p>
-    </div>
-</body>
+        <div class="footer">
+          <p>Csillik Gergely weboldala ©</p>
+        </div>
+      </center>
+       
+  </div>
+    <script> 
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+   
+
+
+  </body>
 
 </html>
